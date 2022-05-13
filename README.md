@@ -1,5 +1,5 @@
 # COMP6248-Reproducability-Challenge
-SymbolicMathematics
+## SymbolicMathematics
 
 PyTorch original implementation of Deep Learning for Symbolic Mathematics (ICLR 2020).https://arxiv.org/abs/1912.01412
 
