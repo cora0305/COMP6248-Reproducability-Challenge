@@ -1,0 +1,1268 @@
+INFO - 05/12/22 17:27:12 - 0:00:00 - ============ Initialized logger ============
+INFO - 05/12/22 17:27:12 - 0:00:00 - Dataset_dir: C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dataset\Prime_BWD
+                                     batch_size: 32
+                                     clean_prefix_expr: True
+                                     clip_grad_norm: 5
+                                     command: python main.py --epoch_size 1024 --batch_size 32 --max_epoch 30 --train_reload_size 1024 --test_reload_size 32 --exp_id "3"
+                                     device: cuda
+                                     dump_path: C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped
+                                     env_seed: 0
+                                     eos_index: 0
+                                     epoch_size: 1024
+                                     eval_only: False
+                                     eval_verbose: 0
+                                     eval_verbose_print: False
+                                     exp_dir: C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3
+                                     exp_id: 3
+                                     exp_type: Prime_BWD
+                                     forward_expansion: 4
+                                     learning_rate: 0.0001
+                                     load_model: False
+                                     max_epoch: 30
+                                     max_position: 4096
+                                     model_dim: 512
+                                     model_path: C:\Users\Lynn\Downloads\Symbolic-Mathematics\trained\model.pth
+                                     model_type: Transformers
+                                     n_words: 0
+                                     num_dec_layer: 6
+                                     num_enc_layer: 6
+                                     num_head: 8
+                                     pad_index: 1
+                                     reload_checkpoint: 
+                                     rewrite_functions: 
+                                     save_periodic: 0
+                                     share_inout_emb: True
+                                     stopping_criterion: 
+                                     task: prim_bwd
+                                     test_dir: C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dataset\Prime_BWD\prim_bwd.test
+                                     test_reload_size: 32
+                                     train_dir: C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dataset\Prime_BWD\prim_bwd.train
+                                     train_reload_size: 1024
+                                     valid_dir: C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dataset\Prime_BWD\prim_bwd.valid
+                                     validation_metrics: valid_prim_bwd_acc
+INFO - 05/12/22 17:27:12 - 0:00:00 - The experiment will be stored in C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3
+                                     
+INFO - 05/12/22 17:27:12 - 0:00:00 - Running command: python main.py --epoch_size 1024 --batch_size 32 --max_epoch 30 --train_reload_size 1024 --test_reload_size 32
+
+INFO - 05/12/22 17:27:16 - 0:00:04 - ============ Starting epoch 0 ... ============
+INFO - 05/12/22 17:27:21 - 0:00:09 -      20 -  113.87 equations/s -  2706.78 words/s - PRIM-BWD:  3.0407 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:23 - 0:00:11 - ============ End of epoch 0 ============
+INFO - 05/12/22 17:27:23 - 0:00:11 - 0/32
+INFO - 05/12/22 17:27:23 - 0:00:11 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:23 - 0:00:11 - 0/32
+INFO - 05/12/22 17:27:23 - 0:00:11 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:23 - 0:00:11 - epoch -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_xe_loss -> 27.669141
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_xe_loss -> 28.661497
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - __log__:{"epoch": 0, "valid_prim_bwd_xe_loss": 27.669140681624413, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 28.66149704158306, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:27:23 - 0:00:11 - New best score for valid_prim_bwd_acc: 0.000000
+INFO - 05/12/22 17:27:23 - 0:00:11 - Saving best-valid_prim_bwd_acc to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\best-valid_prim_bwd_acc.pth ...
+WARNING - 05/12/22 17:27:23 - 0:00:11 - Saving Model parameters ...
+WARNING - 05/12/22 17:27:23 - 0:00:11 - Saving Model optimizer ...
+INFO - 05/12/22 17:27:24 - 0:00:12 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:27:24 - 0:00:12 - Saving Model parameters ...
+WARNING - 05/12/22 17:27:24 - 0:00:12 - Saving Model optimizer ...
+INFO - 05/12/22 17:27:29 - 0:00:17 - ============ Starting epoch 1 ... ============
+INFO - 05/12/22 17:27:30 - 0:00:18 -      40 -   77.47 equations/s -  1799.16 words/s - PRIM-BWD:  2.3413 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:32 - 0:00:20 -      60 -  266.05 equations/s -  6272.11 words/s - PRIM-BWD:  2.2488 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:32 - 0:00:21 - ============ End of epoch 1 ============
+INFO - 05/12/22 17:27:32 - 0:00:21 - 0/32
+INFO - 05/12/22 17:27:32 - 0:00:21 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:32 - 0:00:21 - 0/32
+INFO - 05/12/22 17:27:32 - 0:00:21 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:32 - 0:00:21 - epoch -> 1.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_xe_loss -> 26.205534
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_xe_loss -> 27.697988
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:32 - 0:00:21 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:33 - 0:00:21 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:33 - 0:00:21 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:33 - 0:00:21 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:33 - 0:00:21 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:33 - 0:00:21 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:33 - 0:00:21 - __log__:{"epoch": 1, "valid_prim_bwd_xe_loss": 26.205533511936665, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 27.697987534105778, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:27:33 - 0:00:21 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:27:33 - 0:00:21 - Saving Model parameters ...
+WARNING - 05/12/22 17:27:33 - 0:00:21 - Saving Model optimizer ...
+INFO - 05/12/22 17:27:33 - 0:00:21 - ============ Starting epoch 2 ... ============
+INFO - 05/12/22 17:27:35 - 0:00:23 -      80 -  196.24 equations/s -  4558.64 words/s - PRIM-BWD:  2.1544 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:37 - 0:00:25 - ============ End of epoch 2 ============
+INFO - 05/12/22 17:27:37 - 0:00:25 - 0/32
+INFO - 05/12/22 17:27:37 - 0:00:25 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:37 - 0:00:25 - 0/32
+INFO - 05/12/22 17:27:37 - 0:00:25 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:37 - 0:00:25 - epoch -> 2.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_xe_loss -> 23.888852
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_xe_loss -> 25.674107
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:37 - 0:00:25 - __log__:{"epoch": 2, "valid_prim_bwd_xe_loss": 23.88885223865509, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 25.674107491970062, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:27:37 - 0:00:25 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:27:37 - 0:00:25 - Saving Model parameters ...
+WARNING - 05/12/22 17:27:37 - 0:00:25 - Saving Model optimizer ...
+INFO - 05/12/22 17:27:38 - 0:00:26 - ============ Starting epoch 3 ... ============
+INFO - 05/12/22 17:27:38 - 0:00:27 -     100 -  199.10 equations/s -  4673.65 words/s - PRIM-BWD:  2.0851 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:41 - 0:00:29 -     120 -  272.14 equations/s -  6417.88 words/s - PRIM-BWD:  1.7403 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:42 - 0:00:30 - ============ End of epoch 3 ============
+INFO - 05/12/22 17:27:42 - 0:00:30 - 0/32
+INFO - 05/12/22 17:27:42 - 0:00:30 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:42 - 0:00:30 - 0/32
+INFO - 05/12/22 17:27:42 - 0:00:30 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:42 - 0:00:30 - epoch -> 3.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_xe_loss -> 20.812532
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_xe_loss -> 22.294525
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:42 - 0:00:30 - __log__:{"epoch": 3, "valid_prim_bwd_xe_loss": 20.81253219395876, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 22.294524800032377, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:27:42 - 0:00:30 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:27:42 - 0:00:30 - Saving Model parameters ...
+WARNING - 05/12/22 17:27:42 - 0:00:30 - Saving Model optimizer ...
+INFO - 05/12/22 17:27:43 - 0:00:31 - ============ Starting epoch 4 ... ============
+INFO - 05/12/22 17:27:44 - 0:00:32 -     140 -  197.40 equations/s -  4653.06 words/s - PRIM-BWD:  1.4905 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:46 - 0:00:35 -     160 -  269.63 equations/s -  6304.63 words/s - PRIM-BWD:  1.3467 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:46 - 0:00:35 - ============ End of epoch 4 ============
+INFO - 05/12/22 17:27:46 - 0:00:35 - 0/32
+INFO - 05/12/22 17:27:46 - 0:00:35 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:46 - 0:00:35 - 0/32
+INFO - 05/12/22 17:27:46 - 0:00:35 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:46 - 0:00:35 - epoch -> 4.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_xe_loss -> 19.884448
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_xe_loss -> 20.999744
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:46 - 0:00:35 - __log__:{"epoch": 4, "valid_prim_bwd_xe_loss": 19.88444760814309, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 20.999743785709143, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:27:46 - 0:00:35 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:27:46 - 0:00:35 - Saving Model parameters ...
+WARNING - 05/12/22 17:27:46 - 0:00:35 - Saving Model optimizer ...
+INFO - 05/12/22 17:27:47 - 0:00:35 - ============ Starting epoch 5 ... ============
+INFO - 05/12/22 17:27:50 - 0:00:38 -     180 -  196.19 equations/s -  4646.52 words/s - PRIM-BWD:  1.2532 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:51 - 0:00:39 - ============ End of epoch 5 ============
+INFO - 05/12/22 17:27:51 - 0:00:39 - 0/32
+INFO - 05/12/22 17:27:51 - 0:00:39 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:51 - 0:00:39 - 0/32
+INFO - 05/12/22 17:27:51 - 0:00:39 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:51 - 0:00:39 - epoch -> 5.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_xe_loss -> 20.287354
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_xe_loss -> 20.548190
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:51 - 0:00:39 - __log__:{"epoch": 5, "valid_prim_bwd_xe_loss": 20.287353616207838, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 20.548189729452133, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:27:51 - 0:00:39 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:27:51 - 0:00:39 - Saving Model parameters ...
+WARNING - 05/12/22 17:27:51 - 0:00:39 - Saving Model optimizer ...
+INFO - 05/12/22 17:27:52 - 0:00:40 - ============ Starting epoch 6 ... ============
+INFO - 05/12/22 17:27:53 - 0:00:41 -     200 -  197.88 equations/s -  4603.69 words/s - PRIM-BWD:  1.1969 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:55 - 0:00:43 -     220 -  264.73 equations/s -  6309.31 words/s - PRIM-BWD:  1.1249 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:27:56 - 0:00:44 - ============ End of epoch 6 ============
+INFO - 05/12/22 17:27:56 - 0:00:44 - 0/32
+INFO - 05/12/22 17:27:56 - 0:00:44 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:56 - 0:00:44 - 0/32
+INFO - 05/12/22 17:27:56 - 0:00:44 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:27:56 - 0:00:44 - epoch -> 6.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_xe_loss -> 19.146662
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_xe_loss -> 19.891308
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:27:56 - 0:00:44 - __log__:{"epoch": 6, "valid_prim_bwd_xe_loss": 19.146661963313818, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 19.891307841986418, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:27:56 - 0:00:44 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:27:56 - 0:00:44 - Saving Model parameters ...
+WARNING - 05/12/22 17:27:56 - 0:00:44 - Saving Model optimizer ...
+INFO - 05/12/22 17:27:57 - 0:00:45 - ============ Starting epoch 7 ... ============
+INFO - 05/12/22 17:27:59 - 0:00:47 -     240 -  195.17 equations/s -  4615.40 words/s - PRIM-BWD:  1.0562 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:00 - 0:00:49 - ============ End of epoch 7 ============
+INFO - 05/12/22 17:28:00 - 0:00:49 - 0/32
+INFO - 05/12/22 17:28:01 - 0:00:49 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:01 - 0:00:49 - 0/32
+INFO - 05/12/22 17:28:01 - 0:00:49 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:01 - 0:00:49 - epoch -> 7.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_xe_loss -> 17.930621
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_xe_loss -> 18.678816
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:01 - 0:00:49 - __log__:{"epoch": 7, "valid_prim_bwd_xe_loss": 17.930620551109314, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 18.67881577089429, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:01 - 0:00:49 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:01 - 0:00:49 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:01 - 0:00:49 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:01 - 0:00:50 - ============ Starting epoch 8 ... ============
+INFO - 05/12/22 17:28:02 - 0:00:50 -     260 -  195.46 equations/s -  4612.95 words/s - PRIM-BWD:  1.0220 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:04 - 0:00:52 -     280 -  268.61 equations/s -  6286.33 words/s - PRIM-BWD:  1.0266 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:05 - 0:00:53 - ============ End of epoch 8 ============
+INFO - 05/12/22 17:28:05 - 0:00:53 - 0/32
+INFO - 05/12/22 17:28:05 - 0:00:53 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:05 - 0:00:53 - 0/32
+INFO - 05/12/22 17:28:05 - 0:00:53 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:05 - 0:00:53 - epoch -> 8.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_xe_loss -> 17.963782
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_xe_loss -> 17.809440
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:05 - 0:00:53 - __log__:{"epoch": 8, "valid_prim_bwd_xe_loss": 17.963781598955393, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 17.80944037437439, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:05 - 0:00:53 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:05 - 0:00:53 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:05 - 0:00:53 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:06 - 0:00:54 - ============ Starting epoch 9 ... ============
+INFO - 05/12/22 17:28:08 - 0:00:56 -     300 -  193.83 equations/s -  4653.15 words/s - PRIM-BWD:  1.0084 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:10 - 0:00:58 -     320 -  272.84 equations/s -  6342.59 words/s - PRIM-BWD:  0.9321 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:10 - 0:00:58 - ============ End of epoch 9 ============
+INFO - 05/12/22 17:28:10 - 0:00:58 - 0/32
+INFO - 05/12/22 17:28:10 - 0:00:58 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:10 - 0:00:58 - 0/32
+INFO - 05/12/22 17:28:10 - 0:00:58 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:10 - 0:00:58 - epoch -> 9.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_xe_loss -> 18.885899
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_xe_loss -> 19.231893
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:10 - 0:00:58 - __log__:{"epoch": 9, "valid_prim_bwd_xe_loss": 18.88589859008789, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 19.231892958283424, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:10 - 0:00:58 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:10 - 0:00:58 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:10 - 0:00:58 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:11 - 0:00:59 - ============ Starting epoch 10 ... ============
+INFO - 05/12/22 17:28:13 - 0:01:01 -     340 -  197.09 equations/s -  4544.72 words/s - PRIM-BWD:  0.9370 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:15 - 0:01:03 - ============ End of epoch 10 ============
+INFO - 05/12/22 17:28:15 - 0:01:03 - 0/32
+INFO - 05/12/22 17:28:15 - 0:01:03 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:15 - 0:01:03 - 0/32
+INFO - 05/12/22 17:28:15 - 0:01:03 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:15 - 0:01:03 - epoch -> 10.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_xe_loss -> 18.418942
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_xe_loss -> 19.298006
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:15 - 0:01:03 - __log__:{"epoch": 10, "valid_prim_bwd_xe_loss": 18.418941538780928, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 19.298006299883127, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:15 - 0:01:03 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:15 - 0:01:03 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:15 - 0:01:03 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:20 - 0:01:08 - ============ Starting epoch 11 ... ============
+INFO - 05/12/22 17:28:21 - 0:01:09 -     360 -   85.30 equations/s -  2005.86 words/s - PRIM-BWD:  0.9390 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:23 - 0:01:11 -     380 -  265.83 equations/s -  6400.66 words/s - PRIM-BWD:  0.8917 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:24 - 0:01:12 - ============ End of epoch 11 ============
+INFO - 05/12/22 17:28:24 - 0:01:12 - 0/32
+INFO - 05/12/22 17:28:24 - 0:01:12 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:24 - 0:01:12 - 0/32
+INFO - 05/12/22 17:28:24 - 0:01:12 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:24 - 0:01:12 - epoch -> 11.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_xe_loss -> 18.452229
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_xe_loss -> 19.015201
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:24 - 0:01:12 - __log__:{"epoch": 11, "valid_prim_bwd_xe_loss": 18.45222882926464, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 19.015201415866613, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:24 - 0:01:12 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:24 - 0:01:12 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:24 - 0:01:12 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:24 - 0:01:13 - ============ Starting epoch 12 ... ============
+INFO - 05/12/22 17:28:26 - 0:01:14 -     400 -  194.57 equations/s -  4567.87 words/s - PRIM-BWD:  0.8804 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:28 - 0:01:16 - ============ End of epoch 12 ============
+INFO - 05/12/22 17:28:28 - 0:01:16 - 0/32
+INFO - 05/12/22 17:28:28 - 0:01:16 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:28 - 0:01:16 - 0/32
+INFO - 05/12/22 17:28:28 - 0:01:16 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:28 - 0:01:16 - epoch -> 12.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_xe_loss -> 19.567988
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_xe_loss -> 20.815175
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:28 - 0:01:16 - __log__:{"epoch": 12, "valid_prim_bwd_xe_loss": 19.56798756122589, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 20.815174754709005, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:28 - 0:01:16 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:28 - 0:01:16 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:28 - 0:01:16 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:29 - 0:01:17 - ============ Starting epoch 13 ... ============
+INFO - 05/12/22 17:28:30 - 0:01:18 -     420 -  197.03 equations/s -  4719.72 words/s - PRIM-BWD:  0.8589 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:32 - 0:01:20 -     440 -  270.42 equations/s -  6345.62 words/s - PRIM-BWD:  0.8634 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:33 - 0:01:21 - ============ End of epoch 13 ============
+INFO - 05/12/22 17:28:33 - 0:01:21 - 0/32
+INFO - 05/12/22 17:28:33 - 0:01:21 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:33 - 0:01:21 - 0/32
+INFO - 05/12/22 17:28:33 - 0:01:21 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:33 - 0:01:21 - epoch -> 13.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_xe_loss -> 19.551341
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_xe_loss -> 19.623395
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:33 - 0:01:21 - __log__:{"epoch": 13, "valid_prim_bwd_xe_loss": 19.551340628415346, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 19.623394675552845, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:33 - 0:01:21 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:33 - 0:01:21 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:33 - 0:01:21 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:34 - 0:01:22 - ============ Starting epoch 14 ... ============
+INFO - 05/12/22 17:28:35 - 0:01:23 -     460 -  198.71 equations/s -  4565.42 words/s - PRIM-BWD:  0.8184 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:38 - 0:01:26 -     480 -  266.82 equations/s -  6347.49 words/s - PRIM-BWD:  0.8000 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:38 - 0:01:26 - ============ End of epoch 14 ============
+INFO - 05/12/22 17:28:38 - 0:01:26 - 0/32
+INFO - 05/12/22 17:28:38 - 0:01:26 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:38 - 0:01:26 - 0/32
+INFO - 05/12/22 17:28:38 - 0:01:26 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:38 - 0:01:26 - epoch -> 14.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_xe_loss -> 21.424073
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_xe_loss -> 22.534816
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:38 - 0:01:26 - __log__:{"epoch": 14, "valid_prim_bwd_xe_loss": 21.424072571098804, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 22.53481573611498, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:38 - 0:01:26 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:38 - 0:01:26 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:38 - 0:01:26 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:38 - 0:01:27 - ============ Starting epoch 15 ... ============
+INFO - 05/12/22 17:28:41 - 0:01:29 -     500 -  195.93 equations/s -  4556.79 words/s - PRIM-BWD:  0.8012 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:42 - 0:01:30 - ============ End of epoch 15 ============
+INFO - 05/12/22 17:28:42 - 0:01:30 - 0/32
+INFO - 05/12/22 17:28:42 - 0:01:30 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:42 - 0:01:30 - 0/32
+INFO - 05/12/22 17:28:42 - 0:01:30 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:42 - 0:01:30 - epoch -> 15.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_xe_loss -> 18.977891
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_xe_loss -> 19.712832
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:42 - 0:01:30 - __log__:{"epoch": 15, "valid_prim_bwd_xe_loss": 18.977891337126493, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 19.712831910699606, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:42 - 0:01:30 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:42 - 0:01:30 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:42 - 0:01:30 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:43 - 0:01:31 - ============ Starting epoch 16 ... ============
+INFO - 05/12/22 17:28:44 - 0:01:32 -     520 -  192.87 equations/s -  4501.17 words/s - PRIM-BWD:  0.7668 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:47 - 0:01:35 -     540 -  267.94 equations/s -  6290.26 words/s - PRIM-BWD:  0.7316 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:47 - 0:01:35 - ============ End of epoch 16 ============
+INFO - 05/12/22 17:28:47 - 0:01:35 - 0/32
+INFO - 05/12/22 17:28:47 - 0:01:35 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:47 - 0:01:35 - 0/32
+INFO - 05/12/22 17:28:47 - 0:01:35 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:47 - 0:01:35 - epoch -> 16.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_xe_loss -> 19.398617
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_xe_loss -> 20.330123
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:47 - 0:01:35 - __log__:{"epoch": 16, "valid_prim_bwd_xe_loss": 19.398617282509804, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 20.330123361200094, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:47 - 0:01:35 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:47 - 0:01:35 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:47 - 0:01:35 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:48 - 0:01:36 - ============ Starting epoch 17 ... ============
+INFO - 05/12/22 17:28:50 - 0:01:38 -     560 -  193.99 equations/s -  4549.15 words/s - PRIM-BWD:  0.7194 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:52 - 0:01:40 - ============ End of epoch 17 ============
+INFO - 05/12/22 17:28:52 - 0:01:40 - 0/32
+INFO - 05/12/22 17:28:52 - 0:01:40 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:52 - 0:01:40 - 0/32
+INFO - 05/12/22 17:28:52 - 0:01:40 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:52 - 0:01:40 - epoch -> 17.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_xe_loss -> 19.552385
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_xe_loss -> 21.004823
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:52 - 0:01:40 - __log__:{"epoch": 17, "valid_prim_bwd_xe_loss": 19.55238476023078, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 21.00482315197587, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:52 - 0:01:40 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:52 - 0:01:40 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:52 - 0:01:40 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:53 - 0:01:41 - ============ Starting epoch 18 ... ============
+INFO - 05/12/22 17:28:53 - 0:01:41 -     580 -  196.10 equations/s -  4549.20 words/s - PRIM-BWD:  0.6906 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:56 - 0:01:44 -     600 -  264.41 equations/s -  6384.14 words/s - PRIM-BWD:  0.6699 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:28:56 - 0:01:45 - ============ End of epoch 18 ============
+INFO - 05/12/22 17:28:56 - 0:01:45 - 0/32
+INFO - 05/12/22 17:28:57 - 0:01:45 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:57 - 0:01:45 - 0/32
+INFO - 05/12/22 17:28:57 - 0:01:45 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:28:57 - 0:01:45 - epoch -> 18.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_xe_loss -> 21.195178
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_xe_loss -> 22.657237
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:28:57 - 0:01:45 - __log__:{"epoch": 18, "valid_prim_bwd_xe_loss": 21.19517757371068, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 22.657236754894257, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:28:57 - 0:01:45 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:28:57 - 0:01:45 - Saving Model parameters ...
+WARNING - 05/12/22 17:28:57 - 0:01:45 - Saving Model optimizer ...
+INFO - 05/12/22 17:28:57 - 0:01:46 - ============ Starting epoch 19 ... ============
+INFO - 05/12/22 17:28:59 - 0:01:47 -     620 -  194.76 equations/s -  4547.45 words/s - PRIM-BWD:  0.6701 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:01 - 0:01:49 -     640 -  265.61 equations/s -  6284.97 words/s - PRIM-BWD:  0.6301 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:01 - 0:01:49 - ============ End of epoch 19 ============
+INFO - 05/12/22 17:29:01 - 0:01:49 - 0/32
+INFO - 05/12/22 17:29:01 - 0:01:49 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:01 - 0:01:49 - 0/32
+INFO - 05/12/22 17:29:01 - 0:01:49 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:01 - 0:01:49 - epoch -> 19.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_xe_loss -> 20.060513
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_xe_loss -> 20.555874
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:01 - 0:01:49 - __log__:{"epoch": 19, "valid_prim_bwd_xe_loss": 20.06051269173622, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 20.555874310433865, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:01 - 0:01:49 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:01 - 0:01:49 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:01 - 0:01:49 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:02 - 0:01:50 - ============ Starting epoch 20 ... ============
+INFO - 05/12/22 17:29:04 - 0:01:53 -     660 -  198.40 equations/s -  4700.57 words/s - PRIM-BWD:  0.6315 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:06 - 0:01:54 - ============ End of epoch 20 ============
+INFO - 05/12/22 17:29:06 - 0:01:54 - 0/32
+INFO - 05/12/22 17:29:06 - 0:01:54 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:06 - 0:01:54 - 0/32
+INFO - 05/12/22 17:29:06 - 0:01:54 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:06 - 0:01:54 - epoch -> 20.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_xe_loss -> 19.579587
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_xe_loss -> 21.659884
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:06 - 0:01:54 - __log__:{"epoch": 20, "valid_prim_bwd_xe_loss": 19.579587418586016, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 21.65988352894783, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:06 - 0:01:54 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:06 - 0:01:54 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:06 - 0:01:54 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:09 - 0:01:57 - ============ Starting epoch 21 ... ============
+INFO - 05/12/22 17:29:10 - 0:01:58 -     680 -  109.70 equations/s -  2625.49 words/s - PRIM-BWD:  0.5978 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:13 - 0:02:01 -     700 -  266.60 equations/s -  6297.64 words/s - PRIM-BWD:  0.5831 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:13 - 0:02:01 - ============ End of epoch 21 ============
+INFO - 05/12/22 17:29:13 - 0:02:01 - 0/32
+INFO - 05/12/22 17:29:13 - 0:02:01 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:13 - 0:02:01 - 0/32
+INFO - 05/12/22 17:29:13 - 0:02:01 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:13 - 0:02:01 - epoch -> 21.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_xe_loss -> 24.532919
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_xe_loss -> 24.662768
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:13 - 0:02:01 - __log__:{"epoch": 21, "valid_prim_bwd_xe_loss": 24.532918505370617, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 24.662767954170704, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:13 - 0:02:01 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:13 - 0:02:01 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:13 - 0:02:01 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:14 - 0:02:02 - ============ Starting epoch 22 ... ============
+INFO - 05/12/22 17:29:16 - 0:02:04 -     720 -  192.20 equations/s -  4548.91 words/s - PRIM-BWD:  0.5755 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:18 - 0:02:06 - ============ End of epoch 22 ============
+INFO - 05/12/22 17:29:18 - 0:02:06 - 0/32
+INFO - 05/12/22 17:29:18 - 0:02:06 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:18 - 0:02:06 - 0/32
+INFO - 05/12/22 17:29:18 - 0:02:06 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:18 - 0:02:06 - epoch -> 22.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_xe_loss -> 20.697983
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_xe_loss -> 21.477861
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:18 - 0:02:06 - __log__:{"epoch": 22, "valid_prim_bwd_xe_loss": 20.697982780635357, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 21.477860867977142, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:18 - 0:02:06 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:18 - 0:02:06 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:18 - 0:02:06 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:19 - 0:02:07 - ============ Starting epoch 23 ... ============
+INFO - 05/12/22 17:29:19 - 0:02:07 -     740 -  192.66 equations/s -  4546.07 words/s - PRIM-BWD:  0.5423 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:22 - 0:02:10 -     760 -  273.77 equations/s -  6298.79 words/s - PRIM-BWD:  0.5409 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:23 - 0:02:11 - ============ End of epoch 23 ============
+INFO - 05/12/22 17:29:23 - 0:02:11 - 0/32
+INFO - 05/12/22 17:29:23 - 0:02:11 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:23 - 0:02:11 - 0/32
+INFO - 05/12/22 17:29:23 - 0:02:11 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:23 - 0:02:11 - epoch -> 23.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_xe_loss -> 20.731191
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_xe_loss -> 21.656710
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:23 - 0:02:11 - __log__:{"epoch": 23, "valid_prim_bwd_xe_loss": 20.73119116947055, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 21.65670992806554, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:23 - 0:02:11 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:23 - 0:02:11 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:23 - 0:02:11 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:24 - 0:02:12 - ============ Starting epoch 24 ... ============
+INFO - 05/12/22 17:29:25 - 0:02:13 -     780 -  190.27 equations/s -  4507.59 words/s - PRIM-BWD:  0.5041 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:27 - 0:02:16 -     800 -  265.72 equations/s -  6313.32 words/s - PRIM-BWD:  0.4910 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:27 - 0:02:16 - ============ End of epoch 24 ============
+INFO - 05/12/22 17:29:27 - 0:02:16 - 0/32
+INFO - 05/12/22 17:29:27 - 0:02:16 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:27 - 0:02:16 - 0/32
+INFO - 05/12/22 17:29:28 - 0:02:16 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:28 - 0:02:16 - epoch -> 24.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_xe_loss -> 21.584779
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_xe_loss -> 22.486892
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:28 - 0:02:16 - __log__:{"epoch": 24, "valid_prim_bwd_xe_loss": 21.58477944880724, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 22.486892089247704, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:28 - 0:02:16 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:28 - 0:02:16 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:28 - 0:02:16 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:28 - 0:02:16 - ============ Starting epoch 25 ... ============
+INFO - 05/12/22 17:29:31 - 0:02:19 -     820 -  193.43 equations/s -  4573.42 words/s - PRIM-BWD:  0.4960 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:32 - 0:02:20 - ============ End of epoch 25 ============
+INFO - 05/12/22 17:29:32 - 0:02:20 - 0/32
+INFO - 05/12/22 17:29:32 - 0:02:20 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:32 - 0:02:20 - 0/32
+INFO - 05/12/22 17:29:32 - 0:02:20 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:32 - 0:02:20 - epoch -> 25.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_xe_loss -> 22.387833
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_xe_loss -> 24.034978
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:32 - 0:02:20 - __log__:{"epoch": 25, "valid_prim_bwd_xe_loss": 22.387832537293434, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 24.034978076815605, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:32 - 0:02:20 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:32 - 0:02:20 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:32 - 0:02:20 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:33 - 0:02:21 - ============ Starting epoch 26 ... ============
+INFO - 05/12/22 17:29:34 - 0:02:22 -     840 -  187.41 equations/s -  4338.35 words/s - PRIM-BWD:  0.5098 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:37 - 0:02:25 -     860 -  249.49 equations/s -  5888.44 words/s - PRIM-BWD:  0.4740 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:37 - 0:02:25 - ============ End of epoch 26 ============
+INFO - 05/12/22 17:29:37 - 0:02:25 - 0/32
+INFO - 05/12/22 17:29:37 - 0:02:25 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:37 - 0:02:25 - 0/32
+INFO - 05/12/22 17:29:37 - 0:02:25 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:37 - 0:02:25 - epoch -> 26.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_xe_loss -> 22.039950
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_xe_loss -> 24.200551
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:37 - 0:02:25 - __log__:{"epoch": 26, "valid_prim_bwd_xe_loss": 22.039949908852577, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 24.200550973415375, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:37 - 0:02:25 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:37 - 0:02:25 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:37 - 0:02:25 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:38 - 0:02:26 - ============ Starting epoch 27 ... ============
+INFO - 05/12/22 17:29:40 - 0:02:28 -     880 -  192.29 equations/s -  4610.26 words/s - PRIM-BWD:  0.4264 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:42 - 0:02:30 - ============ End of epoch 27 ============
+INFO - 05/12/22 17:29:42 - 0:02:30 - 0/32
+INFO - 05/12/22 17:29:42 - 0:02:30 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:42 - 0:02:30 - 0/32
+INFO - 05/12/22 17:29:42 - 0:02:30 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:42 - 0:02:30 - epoch -> 27.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_xe_loss -> 22.923230
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_xe_loss -> 23.924318
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:42 - 0:02:30 - __log__:{"epoch": 27, "valid_prim_bwd_xe_loss": 22.923230193555355, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 23.924317970871925, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:42 - 0:02:30 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:42 - 0:02:30 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:42 - 0:02:30 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:43 - 0:02:31 - ============ Starting epoch 28 ... ============
+INFO - 05/12/22 17:29:43 - 0:02:32 -     900 -  187.15 equations/s -  4529.30 words/s - PRIM-BWD:  0.4382 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:46 - 0:02:34 -     920 -  263.54 equations/s -  6196.40 words/s - PRIM-BWD:  0.4236 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:47 - 0:02:35 - ============ End of epoch 28 ============
+INFO - 05/12/22 17:29:47 - 0:02:35 - 0/32
+INFO - 05/12/22 17:29:47 - 0:02:35 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:47 - 0:02:35 - 0/32
+INFO - 05/12/22 17:29:47 - 0:02:35 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:47 - 0:02:35 - epoch -> 28.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_xe_loss -> 21.885186
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_xe_loss -> 22.863041
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:47 - 0:02:35 - __log__:{"epoch": 28, "valid_prim_bwd_xe_loss": 21.88518564030528, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 22.863040693104267, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:47 - 0:02:35 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:47 - 0:02:35 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:47 - 0:02:35 - Saving Model optimizer ...
+INFO - 05/12/22 17:29:48 - 0:02:36 - ============ Starting epoch 29 ... ============
+INFO - 05/12/22 17:29:49 - 0:02:37 -     940 -  190.26 equations/s -  4476.38 words/s - PRIM-BWD:  0.4101 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:52 - 0:02:40 -     960 -  254.94 equations/s -  6107.84 words/s - PRIM-BWD:  0.3923 - prim_bwd-AVG-STOP-PROBS LR: 1.0000e-04
+INFO - 05/12/22 17:29:52 - 0:02:40 - ============ End of epoch 29 ============
+INFO - 05/12/22 17:29:52 - 0:02:40 - 0/32
+INFO - 05/12/22 17:29:52 - 0:02:40 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:52 - 0:02:40 - 0/32
+INFO - 05/12/22 17:29:52 - 0:02:40 - 0/32 (0.0%) equations were evaluated correctly.
+INFO - 05/12/22 17:29:52 - 0:02:40 - epoch -> 29.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_xe_loss -> 24.025931
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_18 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - valid_prim_bwd_acc_23 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_xe_loss -> 24.701616
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_5 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_6 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_7 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_8 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_9 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_10 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_11 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_12 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_13 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_14 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_15 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - test_prim_bwd_acc_17 -> 0.000000
+INFO - 05/12/22 17:29:52 - 0:02:40 - __log__:{"epoch": 29, "valid_prim_bwd_xe_loss": 24.02593070268631, "valid_prim_bwd_acc": 0.0, "valid_prim_bwd_acc_7": 0.0, "valid_prim_bwd_acc_8": 0.0, "valid_prim_bwd_acc_9": 0.0, "valid_prim_bwd_acc_10": 0.0, "valid_prim_bwd_acc_11": 0.0, "valid_prim_bwd_acc_12": 0.0, "valid_prim_bwd_acc_13": 0.0, "valid_prim_bwd_acc_14": 0.0, "valid_prim_bwd_acc_15": 0.0, "valid_prim_bwd_acc_17": 0.0, "valid_prim_bwd_acc_18": 0.0, "valid_prim_bwd_acc_23": 0.0, "test_prim_bwd_xe_loss": 24.701616145670414, "test_prim_bwd_acc": 0.0, "test_prim_bwd_acc_5": 0.0, "test_prim_bwd_acc_6": 0.0, "test_prim_bwd_acc_7": 0.0, "test_prim_bwd_acc_8": 0.0, "test_prim_bwd_acc_9": 0.0, "test_prim_bwd_acc_10": 0.0, "test_prim_bwd_acc_11": 0.0, "test_prim_bwd_acc_12": 0.0, "test_prim_bwd_acc_13": 0.0, "test_prim_bwd_acc_14": 0.0, "test_prim_bwd_acc_15": 0.0, "test_prim_bwd_acc_17": 0.0}
+INFO - 05/12/22 17:29:52 - 0:02:40 - Saving checkpoint to C:\Users\Lynn\Downloads\Symbolic-Mathematics\Dumped\3\checkpoint.pth ...
+WARNING - 05/12/22 17:29:52 - 0:02:40 - Saving Model parameters ...
+WARNING - 05/12/22 17:29:52 - 0:02:40 - Saving Model optimizer ...
