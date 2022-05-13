@@ -1,0 +1,192 @@
+\documentclass{article} % For LaTeX2e
+\usepackage{iclr2019_conference,times}
+
+% Optional math commands from https://github.com/goodfeli/dlbook_notation.
+\input{math_commands.tex}
+
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+
+
+\title{Reproducibility Challenge: \\ Deep Learning for Symbolic Mathematics}
+
+% Authors must not appear in the submitted version. They should be hidden
+% as long as the \iclrfinalcopy macro remains commented out below.
+% Non-anonymous submissions will be rejected without review.
+
+\author{Xiaoxuan Wu, Ruixue Guo, Zeliang Zhao \& Wanyuan Lin\\
+School of Electronics \& Computer Science\\
+University of Southampton\\
+\texttt{\{xw5u21,rg6g21,zz8u21,wl7n21\}@soton.ac.uk}
+}
+
+
+\newcommand{\fix}{\marginpar{FIX}}
+\newcommand{\new}{\marginpar{NEW}}
+
+\iclrfinalcopy % Uncomment for camera-ready version, but NOT for submission.
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+It has been proved in \textit {Deep Learning for Symbolic Mathematics} \citet{Lample} that neural networks perform good on mathematical tasks. This project aims to re-implement parts of the experiments established in that paper and analyse its reproducibility. The code of our experiment is available at \url{https://github.com/cora0305/COMP6248-Reproducability-Challenge}.
+\end{abstract}
+
+\section{Introduction}
+At a time when neural networks are widely used, people have relatively little attention on considering using it to solve mathematical problems such as symbolic calculations. Moreover, among existing studies on this topic, the majority of  them treat it as arithmetic tasks like integer addition and multiplication\cite{zaremba2014learning, arabshahi2018towards}. The original paper proposed the method to consider symbolic calculations as a target for NLP models and utilise sequence-to-sequence models (seq2seq) to solve this problem. Our team reproduced some key experiments and the details are as follows.
+
+
+\section{Method \& Algorithm}
+\label{MnA}
+In the original paper, the authors’ main ideas are divided into three parts: generate data, train the model, and predict results. The first step is to generate data so that the deep learning model is a large number of known samples to do the training. The second step of training the model is to use the data from the first step to train the seq2seq model. The third step is to predict the outcome given a function or a differential equation, use the model that has been trained to predict the outcome, rank the multiple outcomes predicted, and choose the most likely one as the value for the symbolic calculation.
+
+\subsection{Expression as Trees}
+Before using the seq2seq models to finish the task, it is necessary to convert mathematical expressions to trees and from trees to sequences, with operators and internal nodes, children, numbers, constants, and variables as leaves. %The following trees (Figure 1) represent expressions $2+3\times(5+2)$, $3x^2+cos(2x)-1$, and $\frac{\partial^{2} \psi}{\partial x^{2}}-\frac{1}{\upsilon^{2}} \frac{\partial^{2} \psi}{\partial t^{2}}$:
+%\begin{figure}[h]
+%\begin{center}
+%%\framebox[4.0in]{$\;$}
+%\includegraphics[height=0.2\textwidth]{figures/expressionastree.png}
+%%\fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+%\end{center}
+%\caption{Expression as tress}
+%\end{figure}
+
+\subsection{Data Generation}
+Before generating the data, the authors placed the necessary restrictions on the scope of the data:\\
+$\bullet$ \quad expression with up to the $n=15$ internal nodes\\
+$\bullet$ \quad $L=11$ leaf values in $\{x\}\cup\{-5, \ldots, 5\} \backslash\{0\}$\\
+$\bullet$ \quad $p_{2}=4$ binary operators: $+,-,\times,/$\\
+$\bullet$ \quad $p_{1}=15$ unary operators:\\
+$\exp, \log$, sqrt, $\sin, \cos, \tan, \sin ^{-1}, \cos ^{-1}, \tan ^{-1}, \sinh , \cosh , \tanh , \sinh ^{-1}, \cosh h^{-1}, \tanh ^{-1}$\\
+The original paper used three approaches to data generation, respectively Forward Generation (FWD), Backward Generation (BWD), and Backward Generation with Integration by Parts (IBP).
+
+Forward Generation (FWD):
+$$\stackrel{\text { Generate }}{\longrightarrow} f \stackrel{\text { Integrate }}{\longrightarrow} F$$
+This approach generates a random function $f$, computes its antiderivative $F$ using an external symbolic framework (Sympy, Mathematica, etc.), and adds $(f,F)$ to the training set.
+
+Backward Generation (BWD):
+$$f \stackrel{\text { Differentiate }}{\longleftarrow} F \stackrel{\text { Generate }}{\longleftarrow}$$
+This approach generates a function $F$, computes its derivative, and adds $(f,F)$ to the training set.\\
+BWD leads to long problems with short solutions whereas FWD leads to short problems with longer solutions.
+
+Integration by Parts (IBP):\\
+This approach generates random functions $F$ and $G$, computes their derivatives $f$ and $g$ and if $f*G$ is in the training set, computes the integral of $F*g$ with $\int F g=F G-\int f G$.\\
+In our task, we used the first two approaches (FWD and BWD) to generate data.
+
+\subsection{Model}
+$\bullet$ \quad seq2seq model\\
+The seq2seq model is converting a sequence signal as an input into an output sequence signal. Using a deep neural network, the process consists of two processes: encoding and decoding.
+
+$\bullet$ \quad Transformer model\\
+The transformer model is a seq2seq model \cite{vaswani2017attention}.The architecture of transformer model is below (Figure \ref{trans_archi}). It contains two parts, the Encoder, and the Decoder. Unlike the original seq2seq model, there is no RNN in the transformer model, which is entirely based on Attention and fully connected layers.
+% \begin{figure}[h]
+% \begin{center}
+% \includegraphics[height=0.5\textwidth]{figures/transformermodelarchi.png}
+% \end{center}
+% \caption{The transformer model architecture }
+% \label{trans_archi}
+% \end{figure}
+% In this task, we used a transformer model the same as the original paper with 8 attention heads, 6 layers, and dimensionality of 512. And we trained this model with the Adam optimizer with $10^{-4}$ learning rate.
+
+\section{Implementation details}
+\label{Implement}
+\subsection{Dataset}
+Basing the original paper, the implementation could be divided into two parts, the first one using the polynomial dataset and generated with the forward method, the second method using the BWD dataset \footnote{\url{https://dl.fbaipublicfiles.com/SymbolicMathematics/data/prim_bwd.tar.gz}} prepared from author that the task of integration and generated with the backward method.
+
+\subsection{Baseline of the models}
+The baseline of the models is same as the original paper, implementing the seq2seq model, using the default PyTorch's Transformer Encoder, Transformer Decoder module. Setting the learning rate with 0.0001, number of attentions of 8, number of encoder layer of 6, number of decoder layer of 6, model dimension of 512, and the Adam optimizer. Evaluating the performance of the model after each epoch on test and validation set. For evaluation, it simply compared the generated and target sequence. At inference, however, using sympy to compute the difference between the derivative of the generated primitive and the input. If there is no difference, it considers it as a valid answer.
+
+\subsection{Forward method with polynomial dataset}
+\label{implement_fwd}
+By using the virtual machine prepared from ECS CAD Server, running the code in the GPU which Perf is P2 and the Pwr is P2. The environment is set with python 3.7, generating the data with the package sympy, building the model with PyTorch, and then training with PyTorch. Firstly, using the \texttt{data\_gen.py} to generate the polynomial data setting with different numbers, such as 1000, 10000 and so on. As the limit of the GPU machine, we only run the dataset with the number about 100000. It is very slow with a dataset of 100000 numbers. Then, running the \texttt{train.py} file to check the result of the loss, this step becomes faster with the forward method.
+
+\subsection{Backward method with integration dataset}
+By using the Google Colab virtual machine, running the code with the GPU that Tesla 48C. The environment is building with the file author prepared 'environment.yml', setting the environment with python 3.8, and the channels with PyTorch, anaconda and so on.\\
+After activating the environment with the file, running the \texttt{main.py} with the different epoch sizes, batch sizes, epochs, training set and test set. Also, with the limit with the GPU, Tesla 48C could not run with the original dataset about 5000000 numbers, the maximum training set of the implementation is 1000000 numbers. Totally, running the five experiments with the different settings, the average time of each experiment is about 3-4 hours. Finally, the output results could be found with the generated log files in detail.
+
+\section{Result \& Analysis}
+\label{RnA}
+\subsection{RESULTS OF BWD DATASET}
+
+\begin{table}[h]
+\caption{Results of BWD Data}
+\label{bwd_result}
+\begin{center}
+\begin{tabular}{lllllllll}
+\textbf{\begin{tabular}[c]{@{}l@{}}Experiment \\ Number\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Epoch\\ Size\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Batch\\ Size\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Epoch\\ Number\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Train\\ Size\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Test\\ Size\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Valid\\ Size\end{tabular}} &
+  \textbf{\begin{tabular}[c]{@{}l@{}}Running\\ Time\\ (GPU)\end{tabular}} &
+  \textbf{Accuracy} \\
+\\ \hline \\
+\#1 & 1024   & 32  & 30 & 1024    & 32  & 32  & 0:02:24 & 0.0\% \\
+\#2 & 10000  & 32  & 30 & 10000   & 32  & 32  & 2:58:22 & 28.1\% \\
+\#3 & 10000  & 32  & 30 & 10000   & 128 & 128 & 1:45:26 & 12.5\% \\
+\#4 & 10000  & 32  & 40 & 10000   & 32  & 32  & 2:07:28 & 46.9\% \\
+\#5 & 100000 & 32  & 30 & 1000000 & 500 & 500 & 4:28:37 & 95.4\% 
+\end{tabular}
+\end{center}
+\end{table}
+
+As shown in Table \ref{bwd_result}, Experiment 1 was an attempt to figure out the model complexity. The accuracy is 0.0\% since the number of training set is too small. As shown in Experiment 2, the accuracy improves as the number of training sample increases.
+
+Comparing the results of Experiment 2 and 3, it shows that the model will perform poorly if only increasing the number of test and validation set without increasing the number of training set with the same order of magnitude. From the previous experimental results, it is known that the accuracy is relatively high only when the ratio of training size and test size is large.
+
+Further, by comparing Experiment 4 and 2, the accuracy is almost doubled by increasing the epoch number while maintaining the size of training and test sets. However, both the test and validation accuracy are unstable as shown in Figure \ref{fluctuations}. This issue will be addressed in the following experiment by increasing the number of training set.
+
+\begin{figure}[h]
+\begin{minipage}[t]{0.45\linewidth}
+\centering
+\includegraphics[width=5.5cm,height=3.5cm]{figures/F1.png}
+\caption{Fluctuations of Accuracy}
+\label{fluctuations}
+\end{minipage}
+\begin{minipage}[t]{0.45\linewidth}
+\hspace{15pt}
+\includegraphics[width=5.5cm,height=3.5cm]{figures/F2.png}
+\caption{Final Result}
+\label{finalResult}
+\end{minipage}
+\end{figure}
+
+Figure \ref{finalResult} presents the plot of Experiment 5. It can be observed that the accuracy is stable and steadily increasing with each subsequent epoch finally reaching 95.4\%. It is promising to achieve the 98.4\% accuracy, which is implemented by the original paper, by increasing the sizes of training and test samples accordingly. Therefore, this is considered to be a successful reproduction of part of the original paper.
+
+\subsection{RESULTS OF FWD DATASET}
+
+\begin{table}[h]
+\caption{Results of FWD Data}
+\label{fwd_result}
+\begin{center}
+\begin{tabular}{llll}
+\textbf{Data} & \textbf{Batch Size} & \textbf{Epoch} & \textbf{Loss}\\
+\\ \hline \\
+100 & 64 & 20 & 0.52101 \\
+500 & 64  & 200  & 0.04062 \\
+1000 & 64  & 200  & 0.00804 \\
+10000 & 64  & 100  & 0.00983 \\
+10000 & 64 & 200  & 0.00347 \\
+100000 & 32 & 10  & 0.01900 \\
+100000 & 64 & 100  & 0.00958 \\
+\end{tabular}
+\end{center}
+\end{table}
+
+Table \ref{fwd_result} shows the results of FWD dataset. The trends of results are similar to those of BWD dataset, so it will not be described again. Notably, instead of using the given data, new data generated here by ourselves was used as the training set.
+
+As mentioned in Section \ref{implement_fwd}, the maximum 100,000 data were generated and trained with 100 epochs which took more than 27 hours. Due to the computing power of available GPU, this is the limit of the experiment that can be conducted.
+
+\section{Conclusion}
+In this task, we show that the machine translation model is suitable for symbolic mathematic tasks, and the seq2seq model can be used for difficult tasks like function integration. We use Forward Generation (FWD) to generate polynomials and express them as sum of powers. We use Backward Generation (BWD) to generate data and calculate the integration. After experiments, we show that the 6th experiment (100,000 epoch size, 32 batch size, 1,000,000 training size) has the best performance with the accuracy of 95.4\%. \\
+This approach takes advantage of neural networks to reconstruct mathematical problems based on translating some of math’s complicated equations with the seq2seq model.
+
+\bibliography{iclr2019_conference}
+\bibliographystyle{iclr2019_conference}
+
+\end{document}
